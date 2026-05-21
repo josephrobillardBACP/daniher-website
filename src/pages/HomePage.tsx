@@ -5,8 +5,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import MapEmbed from '@/components/MapEmbed';
-import coverImage from '@/assets/home-cover.jpg';
-import mobileCoverImage from '@/assets/home-cover-mobile.jpg';
+import coverImage from '@/assets/new-cover.png';
+import mobileCoverImage from '@/assets/new-cover.png';
 import contactOfficeImage from '@/assets/Gemini_Generated_Image_l6jcc5l6jcc5l6jc.png';
 import drPortrait from '@/assets/Daniher.webp';
 import shawnaPortrait from '@/assets/image-asset (4).webp';
@@ -77,6 +77,21 @@ function HomePage() {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* INTRO BLURB */}
+        <section className="bg-white py-16 md:py-20">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <motion.p
+              initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
+              whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              className="text-[1.2rem] leading-[1.85] text-navy/90 md:text-[1.35rem]"
+            >
+              Amy Daniher is a board certified Internal Medicine physician who has been practicing in San Mateo, California since 2001. She is listed as one of the Top Doctors of 2019 by San Francisco Magazine. Frustrated with the constraints of healthcare and insurance companies, she has transitioned her practice to a &ldquo;private&rdquo; (sometimes called &ldquo;concierge&rdquo; or &ldquo;membership&rdquo;) medical practice to continue to put patient care first. Now her office visits are longer, she is more available, and she is better able to communicate on your behalf with the other physicians involved in your care. Dr. Daniher believes in a comprehensive approach to health that focuses on wellness, prevention, and disease management.
+            </motion.p>
           </div>
         </section>
 
