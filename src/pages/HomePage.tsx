@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Clock, FileText, ArrowRight, Award } from 'lucide-react';
+import { MapPin, Phone, Clock, FileText, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
@@ -53,9 +53,6 @@ function HomePage() {
               className="relative max-w-3xl"
             >
               <div className="mt-2 px-0 sm:mt-5 sm:px-1 md:px-2">
-                <p className="hero-text mb-2 max-w-[18rem] text-[0.9rem] font-semibold uppercase leading-[1.35] tracking-[0.14em] text-white/95 drop-shadow-[0_2px_8px_rgba(15,23,42,0.36)] sm:max-w-none sm:text-xl sm:tracking-[0.18em] md:text-2xl">
-                  Comprehensive Care. Individual Focus.
-                </p>
                 <h1 className="mb-2 max-w-[16rem] text-[2.4rem] font-semibold leading-[0.95] tracking-[-0.03em] text-white drop-shadow-[0_3px_14px_rgba(15,23,42,0.34)] sm:max-w-none sm:text-[3.1rem] md:text-[3.4rem] lg:text-[4.6rem]">
                   Amy Daniher, M.D.
                 </h1>
@@ -125,17 +122,6 @@ function HomePage() {
               <h3 className="text-[1.75rem] font-bold tracking-tight text-navy md:text-[2rem]">Meet Our Team</h3>
               <div className="mx-auto mt-4 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent" />
             </motion.div>
-            <div className="mb-10 text-center">
-              <a
-                href="https://www.castleconnolly.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex max-w-full items-center gap-2 border border-[#d8b24c]/80 bg-[#fff7dc] px-3 py-3 text-[0.82rem] font-semibold uppercase leading-[1.35] tracking-[0.11em] text-[#b4871f] shadow-[0_12px_30px_rgba(20,91,150,0.10)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#fff2c6] sm:px-4 sm:text-[0.92rem] sm:tracking-[0.16em]"
-              >
-                <Award className="h-4 w-4 shrink-0 text-[#c89b2f]" />
-                Selected one of SF's Top Doctors in 2019 and 2024
-              </a>
-            </div>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               {teamMembers.map((member, index) => (
                 <motion.div
