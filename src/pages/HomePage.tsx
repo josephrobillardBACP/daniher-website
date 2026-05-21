@@ -82,16 +82,32 @@ function HomePage() {
 
         {/* INTRO BLURB */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <motion.p
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <motion.div
               initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
               whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[1.2rem] leading-[1.85] text-navy/90 md:text-[1.35rem]"
+              className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-0"
             >
-              Amy Daniher is a board certified Internal Medicine physician who has been practicing in San Mateo, California since 2001. She is listed as one of the Top Doctors of 2019 by San Francisco Magazine. Frustrated with the constraints of healthcare and insurance companies, she has transitioned her practice to a &ldquo;private&rdquo; (sometimes called &ldquo;concierge&rdquo; or &ldquo;membership&rdquo;) medical practice to continue to put patient care first. Now her office visits are longer, she is more available, and she is better able to communicate on your behalf with the other physicians involved in your care. Dr. Daniher believes in a comprehensive approach to health that focuses on wellness, prevention, and disease management.
-            </motion.p>
+              <div className="md:pr-10 lg:pr-14">
+                <p className="mb-5 text-[1.2rem] font-semibold leading-snug text-navy md:text-[1.35rem]">
+                  Are you looking for a primary care practice that
+                </p>
+                <ul className="space-y-3 text-[1.1rem] leading-[1.6] text-navy/90 md:text-[1.2rem]">
+                  <li className="flex gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" /><span>Has a Physician who knows you personally?</span></li>
+                  <li className="flex gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" /><span>Sees you promptly and spends enough time with you at your office visit?</span></li>
+                  <li className="flex gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" /><span>Is available 24/7 if you have questions?</span></li>
+                  <li className="flex gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" /><span>Works with you as a team to keep you healthy?</span></li>
+                  <li className="flex gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" /><span>Guarantees that you actually meet with the Physician during your visits?</span></li>
+                </ul>
+              </div>
+              <div className="border-t border-steely-blue/40 pt-10 md:border-l md:border-t-0 md:pl-10 md:pt-0 lg:pl-14">
+                <p className="text-[1.2rem] leading-[1.85] text-navy/90 md:text-[1.35rem]">
+                  Amy Daniher is a board certified Internal Medicine physician who has been practicing in San Mateo, California since 2001. She is listed as one of the Top Doctors of 2019 by San Francisco Magazine. Frustrated with the constraints of healthcare and insurance companies, she has transitioned her practice to a &ldquo;private&rdquo; (sometimes called &ldquo;concierge&rdquo; or &ldquo;membership&rdquo;) medical practice to continue to put patient care first. Now her office visits are longer, she is more available, and she is better able to communicate on your behalf with the other physicians involved in your care. Dr. Daniher believes in a comprehensive approach to health that focuses on wellness, prevention, and disease management.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </section>
 
