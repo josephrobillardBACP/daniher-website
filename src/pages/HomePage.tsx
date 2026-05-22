@@ -108,8 +108,44 @@ function HomePage() {
           </div>
         </section>
 
-        {/* TEAM */}
+        {/* OVERVIEW */}
         <section className="border-y border-steely-blue/30 bg-white py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
+                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.6, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <h2 className="mb-6 text-[1.75rem] font-bold leading-snug tracking-tight text-navy md:text-[2rem]">What is Concierge Medicine?</h2>
+                <p className="mb-4 text-[1.45rem] leading-[1.85] text-navy/90">Concierge medicine represents a return to the traditional doctor-patient relationship, where your physician has the time to truly know you and your health needs. Through an annual membership, you gain direct access to Dr. Daniher, same-day or next-day appointments, and comprehensive care that goes beyond the constraints of traditional insurance-based medicine.</p>
+                <p className="mb-8 text-[1.45rem] leading-[1.85] text-navy/90">This model allows for longer appointments, proactive health planning, and a genuine partnership in maintaining your wellbeing.</p>
+                <Link to="/services" className="inline-flex items-center text-sm font-semibold uppercase tracking-wider text-gold transition-colors hover:text-navy">
+                  View Our Services <ArrowRight className="ml-1.5 h-4 w-4" />
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
+                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-y-6 md:gap-x-5 md:gap-y-7"
+              >
+                {conciergeCards.map((card, i) => (
+                  <div key={i} className={`flex min-h-[8.2rem] flex-col border border-navy/55 border-t-[3px] bg-white p-4 shadow-[0_12px_24px_rgba(95,118,128,0.08)] sm:min-h-[8.7rem] md:min-h-[9.1rem] md:p-4.5 ${i >= 2 ? 'sm:translate-y-4 md:translate-y-5' : ''} ${card.accent}`}>
+                    <h3 className="mb-2.5 text-[1.32rem] font-semibold leading-tight text-navy">{card.title}</h3>
+                    <p className="text-[1.1rem] leading-6 text-navy/85">{card.desc}</p>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* TEAM */}
+        <section className="bg-white py-20 md:py-28">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
@@ -148,42 +184,6 @@ function HomePage() {
               <Link to="/team" className="inline-flex items-center justify-center border border-navy px-10 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] text-navy transition-colors duration-200 hover:bg-navy hover:text-white active:scale-[0.97]">
                 Meet the Office
               </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* OVERVIEW */}
-        <section className="bg-white py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
-              <motion.div
-                initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-              >
-                <h2 className="mb-6 text-[1.75rem] font-bold leading-snug tracking-tight text-navy md:text-[2rem]">What is Concierge Medicine?</h2>
-                <p className="mb-4 text-[1.45rem] leading-[1.85] text-navy/90">Concierge medicine represents a return to the traditional doctor-patient relationship, where your physician has the time to truly know you and your health needs. Through an annual membership, you gain direct access to Dr. Daniher, same-day or next-day appointments, and comprehensive care that goes beyond the constraints of traditional insurance-based medicine.</p>
-                <p className="mb-8 text-[1.45rem] leading-[1.85] text-navy/90">This model allows for longer appointments, proactive health planning, and a genuine partnership in maintaining your wellbeing.</p>
-                <Link to="/services" className="inline-flex items-center text-sm font-semibold uppercase tracking-wider text-gold transition-colors hover:text-navy">
-                  View Our Services <ArrowRight className="ml-1.5 h-4 w-4" />
-                </Link>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-                whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-y-6 md:gap-x-5 md:gap-y-7"
-              >
-                {conciergeCards.map((card, i) => (
-                  <div key={i} className={`flex min-h-[8.2rem] flex-col border border-navy/55 border-t-[3px] bg-white p-4 shadow-[0_12px_24px_rgba(95,118,128,0.08)] sm:min-h-[8.7rem] md:min-h-[9.1rem] md:p-4.5 ${i >= 2 ? 'sm:translate-y-4 md:translate-y-5' : ''} ${card.accent}`}>
-                    <h3 className="mb-2.5 text-[1.32rem] font-semibold leading-tight text-navy">{card.title}</h3>
-                    <p className="text-[1.1rem] leading-6 text-navy/85">{card.desc}</p>
-                  </div>
-                ))}
-              </motion.div>
             </div>
           </div>
         </section>
