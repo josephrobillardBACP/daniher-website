@@ -55,7 +55,7 @@ function HomePage() {
               <div className="mt-2 px-0 sm:mt-5 sm:px-1 md:px-2">
                 <Link
                   to="/contact"
-                  className="mb-5 inline-flex items-center justify-center bg-gold px-6 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy shadow-[0_10px_24px_rgba(15,23,42,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-white sm:mb-6 sm:px-7 sm:py-3.5 sm:text-sm"
+                  className="mb-5 inline-flex items-center justify-center rounded-full bg-gold px-7 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy shadow-[0_10px_24px_rgba(15,23,42,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-white sm:mb-6 sm:px-8 sm:py-3.5 sm:text-sm"
                 >
                   Inquire About Membership
                 </Link>
