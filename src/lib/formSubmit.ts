@@ -1,7 +1,7 @@
 type SubmissionPayload = Record<string, string>;
 
 const WEB3FORMS_ACCESS_KEY =
-  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '13983de2-1baf-4984-89f1-680d4a44f62b';
+  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '3a58d877-389c-489c-99bb-5d1d8d271f80';
 
 export async function submitWebsiteForm(payload: SubmissionPayload) {
   const response = await fetch('https://api.web3forms.com/submit', {
