@@ -36,7 +36,7 @@ function HomePage() {
             <img
               src={mobileCoverImage}
               alt="Dr. Amy Daniher with a patient"
-              className="h-full w-full object-cover object-[8%_top] contrast-[1.06] saturate-[1.03] brightness-[1.03] sm:hidden"
+              className="h-full w-full object-cover object-center contrast-[1.06] saturate-[1.03] brightness-[1.03] sm:hidden"
             />
             <img
               src={coverImage}
@@ -53,6 +53,12 @@ function HomePage() {
               className="relative max-w-3xl"
             >
               <div className="mt-2 px-0 sm:mt-5 sm:px-1 md:px-2">
+                <Link
+                  to="/contact"
+                  className="mb-5 inline-flex items-center justify-center bg-gold px-6 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy shadow-[0_10px_24px_rgba(15,23,42,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-white sm:mb-6 sm:px-7 sm:py-3.5 sm:text-sm"
+                >
+                  Inquire About Membership
+                </Link>
                 <h1 className="mb-2 max-w-[16rem] text-[2.4rem] font-semibold leading-[0.95] tracking-[-0.03em] text-white drop-shadow-[0_3px_14px_rgba(15,23,42,0.34)] sm:max-w-none sm:text-[3.1rem] md:text-[3.4rem] lg:text-[4.6rem]">
                   Amy Daniher, M.D.
                 </h1>
