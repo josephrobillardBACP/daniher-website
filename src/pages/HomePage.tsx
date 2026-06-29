@@ -69,7 +69,7 @@ function HomePage() {
                   </p>
                   <p className="hero-text flex items-center gap-2">
                     <Phone className="h-5 w-5 shrink-0 text-steely-blue sm:h-6 sm:w-6" />
-                    650-393-5851
+                    <a href="tel:+16503935851" className="transition-opacity hover:opacity-80">650-393-5851</a>
                   </p>
                 </div>
               </div>
@@ -245,7 +245,7 @@ function HomePage() {
                   </h4>
                   <p className="mb-4 text-sm leading-relaxed text-navy/88">34 N. San Mateo Drive, Suite #1<br />San Mateo, CA94401</p>
                   <div className="space-y-2">
-                    <p className="flex items-center gap-2 text-sm text-navy/88"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> 650-393-5851</p>
+                    <p className="flex items-center gap-2 text-sm text-navy/88"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> <a href="tel:+16503935851" className="hover:underline">650-393-5851</a></p>
                     <p className="flex items-center gap-2 text-sm text-navy/88"><FileText className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> 650-393-5871</p>
                   </div>
                 </div>
