@@ -20,10 +20,10 @@ function HomePage() {
   ];
 
   const conciergeCards = [
-    { title: 'Direct Access', desc: '24/7 communication with your physician via phone or email.', accent: 'border-t-gold' },
+    { title: 'Direct Access', desc: '24/7 communication with your physician via phone or email.', accent: 'border-t-steely-blue' },
     { title: 'More Time', desc: 'Extended, unhurried visits to address all your concerns.', accent: 'border-t-steely-blue' },
     { title: 'Proactive Care', desc: 'Focus on prevention, wellness, and long-term health optimization.', accent: 'border-t-steely-blue' },
-    { title: 'Coordination', desc: 'Seamless specialist referrals and hospital care management.', accent: 'border-t-gold' }
+    { title: 'Coordination', desc: 'Seamless specialist referrals and hospital care management.', accent: 'border-t-steely-blue' }
   ];
 
   return (
