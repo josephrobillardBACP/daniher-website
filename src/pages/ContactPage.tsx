@@ -39,10 +39,10 @@ function ContactPage() {
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="order-2 space-y-6 lg:order-3 lg:col-span-1">
               <div className="border border-navy/70 bg-white p-6 shadow-sm">
                 <h3 className="mb-4 flex items-center gap-2 border-b border-gray-100 pb-3 text-[2rem] font-semibold text-navy"><MapPin className="h-4 w-4 text-gold" /> Contact Information</h3>
-                <p className="mb-4 text-sm leading-relaxed text-foreground/80">34 N. San Mateo Drive, Suite #1<br />San Mateo, CA94401</p>
+                <p className="mb-4 text-sm leading-relaxed text-foreground/80">34 North San Mateo Drive, Suite #1<br />San Mateo, CA 94401</p>
                 <div className="space-y-2">
-                  <p className="flex items-center gap-2 text-sm text-foreground/80"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> 650-393-5851</p>
-                  <p className="flex items-center gap-2 text-sm text-foreground/80"><FileText className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> 650-393-5871</p>
+                  <p className="flex items-center gap-2 text-sm text-foreground/80"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> (650) 393-5851</p>
+                  <p className="flex items-center gap-2 text-sm text-foreground/80"><FileText className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> (650) 393-5871</p>
                 </div>
               </div>
               <div className="border border-navy/70 bg-white p-6 shadow-sm">

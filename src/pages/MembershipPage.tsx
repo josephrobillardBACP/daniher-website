@@ -79,7 +79,7 @@ function MembershipPage() {
     {
       question: 'How do I become a member?',
       answer:
-        'Please call our office and ask for the Patient Membership Agreement. Then complete and sign the Agreement and send it on to our office at 34 N. San Mateo Drive, Suite #1, San Mateo, CA94401.',
+        'Please call our office and ask for the Patient Membership Agreement. Then complete and sign the Agreement and send it on to our office at 34 North San Mateo Drive, Suite #1, San Mateo, CA 94401.',
     },
     {
       question: 'Will my private insurance reimburse my annual concierge fee?',
@@ -134,7 +134,7 @@ function MembershipPage() {
     {
       question: 'What if I have more questions?',
       answer:
-        'Please call our office at 650 393-5851 to speak with our staff. Shawna G., our office manager and Private Medicine coordinator, can discuss details of our new practice concept with you. Dr. Daniher would also be happy to talk to you personally on the phone if you have questions.',
+        'Please call our office at (650) 393-5851 to speak with our staff. Shawna G., our office manager and Private Medicine coordinator, can discuss details of our new practice concept with you. Dr. Daniher would also be happy to talk to you personally on the phone if you have questions.',
     },
   ];
 

@@ -100,10 +100,10 @@ function PrivacyPolicyPage() {
 
             <h2 className="mt-8 mb-4 text-2xl font-semibold text-navy">Contact Us</h2>
             <p className="mb-2">Amy Daniher, M.D.</p>
-            <p className="mb-2">34 N. San Mateo Drive, Suite #1</p>
-            <p className="mb-2">San Mateo, CA94401</p>
-            <p className="mb-2">T: 650-393-5851</p>
-            <p className="mb-2">F: 650-393-5871</p>
+            <p className="mb-2">34 North San Mateo Drive, Suite #1</p>
+            <p className="mb-2">San Mateo, CA 94401</p>
+            <p className="mb-2">T: (650) 393-5851</p>
+            <p className="mb-2">F: (650) 393-5871</p>
           </div>
         </div>
       </main>

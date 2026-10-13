@@ -71,11 +71,11 @@ function HomePage() {
                 <div className="space-y-2 text-[1.05rem] text-white drop-shadow-[0_2px_8px_rgba(15,23,42,0.34)] sm:text-xl md:text-2xl">
                   <p className="hero-text flex items-start gap-2 sm:items-center">
                     <MapPin className="mt-1 h-5 w-5 shrink-0 text-steely-blue sm:mt-0 sm:h-6 sm:w-6" />
-                    34 N. San Mateo Drive, Suite #1
+                    34 North San Mateo Drive, Suite #1
                   </p>
                   <p className="hero-text flex items-center gap-2">
                     <Phone className="h-5 w-5 shrink-0 text-steely-blue sm:h-6 sm:w-6" />
-                    <a href="tel:+16503935851" className="transition-opacity hover:opacity-80">650-393-5851</a>
+                    <a href="tel:+16503935851" className="transition-opacity hover:opacity-80">(650) 393-5851</a>
                   </p>
                 </div>
               </div>
@@ -249,10 +249,10 @@ function HomePage() {
                   <h4 className="mb-4 flex items-center gap-2 border-b border-gray-100 pb-3 font-semibold text-navy">
                     <MapPin className="h-4 w-4 text-gold" /> Contact Information
                   </h4>
-                  <p className="mb-4 text-sm leading-relaxed text-navy/88">34 N. San Mateo Drive, Suite #1<br />San Mateo, CA94401</p>
+                  <p className="mb-4 text-sm leading-relaxed text-navy/88">34 North San Mateo Drive, Suite #1<br />San Mateo, CA 94401</p>
                   <div className="space-y-2">
-                    <p className="flex items-center gap-2 text-sm text-navy/88"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> <a href="tel:+16503935851" className="hover:underline">650-393-5851</a></p>
-                    <p className="flex items-center gap-2 text-sm text-navy/88"><FileText className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> 650-393-5871</p>
+                    <p className="flex items-center gap-2 text-sm text-navy/88"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Telephone:</span> <a href="tel:+16503935851" className="hover:underline">(650) 393-5851</a></p>
+                    <p className="flex items-center gap-2 text-sm text-navy/88"><FileText className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> (650) 393-5871</p>
                   </div>
                 </div>
                 <div className="border border-navy/70 bg-white p-6">

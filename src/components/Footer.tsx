@@ -22,21 +22,22 @@ function Footer() {
               <p className="flex items-start gap-3">
                 <MapPin className="mt-1 h-4 w-4 shrink-0 text-gold" />
                 <span>
-                  34 N. San Mateo Drive, Suite #1
+                  34 North San Mateo Drive, Suite 1
                   <br />
-                  San Mateo, CA94401
+                  San Mateo, CA 94401
                 </span>
               </p>
               <p className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-gold" />
                 <span>
-                  <span className="font-medium text-navy">Telephone:</span> 650-393-5851
+                  <span className="font-medium text-navy">Telephone:</span>{' '}
+                  <a href="tel:+16503935851" className="hover:underline">(650) 393-5851</a>
                 </span>
               </p>
               <p className="flex items-center gap-3">
                 <FileText className="h-4 w-4 shrink-0 text-gold" />
                 <span>
-                  <span className="font-medium text-navy">Fax:</span> 650-393-5871
+                  <span className="font-medium text-navy">Fax:</span> (650) 393-5871
                 </span>
               </p>
             </div>
