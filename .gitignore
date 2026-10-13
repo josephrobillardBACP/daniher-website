@@ -8,3 +8,6 @@ vite-run.log
 persist-test.log
 *.tsbuildinfo
 src/assets/Rika+at+office (2).png
+
+# Google Drive sync artifacts (this repo lives on a synced folder)
+desktop.ini
